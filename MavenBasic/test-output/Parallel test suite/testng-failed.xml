@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [Parallel test suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="methods" name="FireFox(failed)">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testngexample.ActiTime">
+        <methods>
+          <include name="b_login"/>
+        </methods>
+      </class> <!-- testngexample.ActiTime -->
+    </classes>
+  </test> <!-- FireFox(failed) -->
+  <test thread-count="4" parallel="methods" name="Chrome(failed)">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testngexample.GoogleAppWithBeforeAfterTest">
+        <methods>
+          <include name="testSearch"/>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- testngexample.GoogleAppWithBeforeAfterTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

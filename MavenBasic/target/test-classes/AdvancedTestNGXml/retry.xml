@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RetryFailedTest" verbose="1">
+
+	<listeners>
+
+		<listener class-name="runtimeretryfailedtc.DemoTransformer" />
+
+	</listeners>
+	<test name="RetryMultiple">
+
+		<classes>
+
+			<class name="runtimeretryfailedtc.Test001"/>
+			<class name="runtimeretryfailedtc.Test002"/>
+
+		</classes>
+
+	</test>
+</suite>

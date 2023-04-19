@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testngexample.ActiTimeTimeOut"/>
+      <class name="testngexample.Example1"/>
+      <class name="testngexample.FirstTestNgWebScript"/>
+      <class name="testngexample.GoogleAppWithBeforeAfterMethod"/>
+      
+      <class name="testngexample.ActiTimeExceptionAndTimeout"/>
+      <class name="testngexample.ActiTimePriority"/>
+      <class name="testngexample.ActiTime"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
